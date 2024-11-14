@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@types/node": "^22.9.0",
+    "knip": "^5.37.0",
+    "postcss-cli": "^11.0.0",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "knip": "knip"
+  }
+}

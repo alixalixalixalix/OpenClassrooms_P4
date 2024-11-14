@@ -7,14 +7,13 @@
       name="description"
       content="Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer."
     />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrapEssentiel.css" />
-    <link rel="preload" href="./assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" as="style" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      rel="preload" as="style" onload="this.rel='stylesheet'"
     />
     <meta charset="UTF-8" />
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
@@ -48,6 +47,16 @@
       </nav>
     </header>
 
+    <!--
+    <img
+      src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
+      srcset="
+      ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-500.webp         500w,
+      ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-1000.webp 1000w
+      "
+    />
+    -->
+
     <section>
       <div
         id="carouselExampleIndicators"
@@ -79,21 +88,33 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+              src="./assets/images/slider/pieton.webp"
+              srcset="
+                ./assets/images/slider/pieton-650.webp  650w,
+                ./assets/images/slider/pieton.webp     1000w
+              "
               class="d-block w-100"
               alt="photo homme passage piéton"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+              src="./assets/images/slider/foule.webp"
+              srcset="
+                ./assets/images/slider/foule-650.webp  650w,
+                ./assets/images/slider/foule.webp     1000w
+              "
               class="d-block w-100"
               alt="photo foule concert"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+              src="./assets/images/slider/kiss.webp"
+              srcset="
+                ./assets/images/slider/kiss-650.webp  650w,
+                ./assets/images/slider/kiss.webp     1000w
+              "
               class="d-block w-100"
               alt="photo couple mariage"
             />
@@ -151,56 +172,92 @@
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-            alt="photo concert scène"
+            src="./assets/images/gallery/concerts/concert-red.webp"
+            srcset="
+              ./assets/images/gallery/concerts/concert-red-650.webp  650w,
+              ./assets/images/gallery/concerts/concert-red.webp     1000w
+            "
+          alt="photo concert scène"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-            alt="photo entreprise homme"
+            src="./assets/images/gallery/homme-pro.webp"
+            srcset="
+              ./assets/images/gallery/entreprise/homme-pro-650.webp  650w,
+              ./assets/images/gallery/entreprise/homme-pro.webp     1000w
+            "
+          alt="photo entreprise homme"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-            alt="photo entreprise femme"
+            src="./assets/images/gallery/entreprise/ambiance-pro.webp"
+            srcset="
+              ./assets/images/gallery/entreprise/ambiance-pro-650.webp  650w,
+              ./assets/images/gallery/entreprise/ambiance-pro.webp     1000w
+            "
+          alt="photo entreprise femme"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-            alt="photo mariages mains"
+            src="./assets/images/gallery/mariage/mains.webp"
+            srcset="
+              ./assets/images/gallery/mariage/mains-650.webp  650w,
+              ./assets/images/gallery/mariage/mains.webp     1000w
+            "
+          alt="photo mariages mains"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-            alt="photo portrait yeux fermés"
+            src="./assets/images/gallery/portraits/yeux.webp"
+            srcset="
+              ./assets/images/gallery/portraits/yeux-650.webp  650w,
+              ./assets/images/gallery/portraits/yeux.webp     1000w
+            "
+          alt="photo portrait yeux fermés"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-            alt="photo mariages accolade"
+            src="./assets/images/gallery/mariage/mariage.webp"
+            srcset="
+              ./assets/images/gallery/mariage/mariage-650.webp  650w,
+              ./assets/images/gallery/mariage/mariage.webp     1000w
+            "
+          alt="photo mariages accolade"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-            alt="photo portrait femme grillage"
+            src="./assets/images/gallery/portraits/grillage.webp"
+            srcset="
+              ./assets/images/gallery/portraits/grillage-650.webp  650w,
+              ./assets/images/gallery/portraits/grillage.webp     1000w
+            "
+          alt="photo portrait femme grillage"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-            alt="photo concert artiste"
+            src="./assets/images/gallery/concerts/chanteur.webp"
+            srcset="
+              ./assets/images/gallery/concerts/chanteur-650.webp  650w,
+              ./assets/images/gallery/concerts/chanteur.webp     1000w
+            "
+          alt="photo concert artiste"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-            alt="photo entreprise ambiance"
+            src="./assets/images/gallery/entreprise/smile-pro.webp"
+            srcset="
+              ./assets/images/gallery/entreprise/smile-pro-650.webp  650w,
+              ./assets/images/gallery/entreprise/smile-pro.webp     1000w
+            "
+          alt="photo entreprise ambiance"
           />
         </div>
       </div>

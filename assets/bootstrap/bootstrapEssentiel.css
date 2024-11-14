@@ -320,6 +320,9 @@ iframe {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
+}
+
+@media (min-width: 992px) {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -409,6 +412,17 @@ iframe {
 .carousel-item-prev {
   display: block;
 }
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
