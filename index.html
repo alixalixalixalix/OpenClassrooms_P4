@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Nina Carducci | Photographe</title>
+    <title>Nina Carducci | Photographe à Bordeaux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer."
+      content="Photographe professionnelle disponible sur Bordeaux pour portrait, entreprise, mariage, concert."
     />
     <link rel="stylesheet" as="style" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/style-nomini.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="preload" as="style" onload="this.rel='stylesheet'"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
     <meta charset="UTF-8" />
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
@@ -24,6 +26,39 @@
     ></script>
     <script src="./assets/maugallery.js"></script>
     <script src="./assets/scripts.js"></script>
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:site_name" content="Nina Carducci" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nina-carducci.github.io/" />
+    <meta
+      property="og:title"
+      content="Nina Carducci | Photographe à Bordeaux"
+    />
+    <meta
+      property="og:description"
+      content="Photographe professionnelle disponible sur Bordeaux pour portrait, entreprise, mariage, concert."
+    />
+    <meta property="og:image" content="./assets/images/nina.webp" />
+   
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="./assets/images/nina.webp" />
+    <meta
+      name="twitter:title"
+      content="Nina Carducci | Photographe à Bordeaux"
+    />
+    <meta
+      name="twitter:description"
+      content="Photographe professionnelle disponible sur Bordeaux pour portrait, entreprise, mariage, concert."
+    />
+    <meta
+      name="twitter:image"
+      content="./assets/images/nina.webp"
+    />
+    <meta
+      name="twitter:url"
+      content="https://nina-carducci.github.io/"
+    />
   </head>
 
   <body>
@@ -46,16 +81,6 @@
         </ul>
       </nav>
     </header>
-
-    <!--
-    <img
-      src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-      srcset="
-      ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-500.webp         500w,
-      ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-1000.webp 1000w
-      "
-    />
-    -->
 
     <section>
       <div
@@ -142,26 +167,31 @@
     </section>
 
     <section id="about">
-      <div class="picture left">
-        <img src="./assets/images/nina.webp" alt="photo nina carducci" />
-      </div>
-      <div id="about-me">
-        <h1 class="about-me__title">À propos de moi</h1>
-        <p class="about-me__introduction">
-          Devenir photographe était pour moi une évidence. Comme si j’y étais
-          prédestiné. Saisir un moment, une émotion, une situation, un endroit,
-          une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </p>
-        <p class="about-me__p">
-          Nous passons notre vie à chercher le bonheur, et lorsque nous y
-          touchons, nous n’avons qu’une envie : le figer au travers de
-          photographies pour le savourer avec les personnes qui sont importantes
-          à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
-          propose : saisir ces merveilleux moments au travers de mon regard, mon
-          approche, ma technique. Rendre ces moments immortels, afin que vous
-          puissiez y puiser de l’amour, du bonheur, de la tendresse et de
-          lumière à chaque fois que vous poserez les yeux sur vos photos.
-        </p>
+      <div id="about-bg"></div>
+      <div id="about-container">
+        <div class="picture left">
+          <img src="./assets/images/nina.webp" alt="photo nina carducci" />
+        </div>
+        <div id="about-me">
+          <h1 class="about-me__title">À propos de moi</h1>
+          <p class="about-me__introduction">
+            Devenir photographe était pour moi une évidence. Comme si j’y étais
+            prédestiné. Saisir un moment, une émotion, une situation, un
+            endroit, une lumière et les rendre immortels, voilà ce qui me fait
+            vibrer.
+          </p>
+          <p class="about-me__p">
+            Nous passons notre vie à chercher le bonheur, et lorsque nous y
+            touchons, nous n’avons qu’une envie : le figer au travers de
+            photographies pour le savourer avec les personnes qui sont
+            importantes à nos yeux, ou le partager au plus grand nombre. C’est
+            ce que je vous propose : saisir ces merveilleux moments au travers
+            de mon regard, mon approche, ma technique. Rendre ces moments
+            immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
+            de la tendresse et de lumière à chaque fois que vous poserez les
+            yeux sur vos photos.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -177,17 +207,17 @@
               ./assets/images/gallery/concerts/concert-red-650.webp  650w,
               ./assets/images/gallery/concerts/concert-red.webp     1000w
             "
-          alt="photo concert scène"
+            alt="photo concert scène"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/homme-pro.webp"
+            src="./assets/images/gallery/entreprise/homme-pro.webp"
             srcset="
               ./assets/images/gallery/entreprise/homme-pro-650.webp  650w,
               ./assets/images/gallery/entreprise/homme-pro.webp     1000w
             "
-          alt="photo entreprise homme"
+            alt="photo entreprise homme"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -197,7 +227,7 @@
               ./assets/images/gallery/entreprise/ambiance-pro-650.webp  650w,
               ./assets/images/gallery/entreprise/ambiance-pro.webp     1000w
             "
-          alt="photo entreprise femme"
+            alt="photo entreprise femme"
           />
           <img
             data-gallery-tag="Mariages"
@@ -207,7 +237,7 @@
               ./assets/images/gallery/mariage/mains-650.webp  650w,
               ./assets/images/gallery/mariage/mains.webp     1000w
             "
-          alt="photo mariages mains"
+            alt="photo mariages mains"
           />
           <img
             data-gallery-tag="Portrait"
@@ -217,7 +247,7 @@
               ./assets/images/gallery/portraits/yeux-650.webp  650w,
               ./assets/images/gallery/portraits/yeux.webp     1000w
             "
-          alt="photo portrait yeux fermés"
+            alt="photo portrait yeux fermés"
           />
           <img
             data-gallery-tag="Mariages"
@@ -227,7 +257,7 @@
               ./assets/images/gallery/mariage/mariage-650.webp  650w,
               ./assets/images/gallery/mariage/mariage.webp     1000w
             "
-          alt="photo mariages accolade"
+            alt="photo mariages accolade"
           />
           <img
             data-gallery-tag="Portrait"
@@ -237,7 +267,7 @@
               ./assets/images/gallery/portraits/grillage-650.webp  650w,
               ./assets/images/gallery/portraits/grillage.webp     1000w
             "
-          alt="photo portrait femme grillage"
+            alt="photo portrait femme grillage"
           />
           <img
             data-gallery-tag="Concert"
@@ -247,7 +277,7 @@
               ./assets/images/gallery/concerts/chanteur-650.webp  650w,
               ./assets/images/gallery/concerts/chanteur.webp     1000w
             "
-          alt="photo concert artiste"
+            alt="photo concert artiste"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -257,7 +287,7 @@
               ./assets/images/gallery/entreprise/smile-pro-650.webp  650w,
               ./assets/images/gallery/entreprise/smile-pro.webp     1000w
             "
-          alt="photo entreprise ambiance"
+            alt="photo entreprise ambiance"
           />
         </div>
       </div>
