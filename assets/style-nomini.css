@@ -50,6 +50,12 @@ header {
 				}
 
 /* ——— */
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color: black;
+	padding:5px;
+}
+
 /* SECTION ABOUT */
 
 #about {
@@ -97,6 +103,8 @@ header {
 				margin-top: 1em;
 				margin-bottom: 30px;
 				font-size: 30px;
+				padding-block: 0;
+				text-align: left;
 			}
 			.about-me__introduction {
 				font-family: 'Spectral', serif;

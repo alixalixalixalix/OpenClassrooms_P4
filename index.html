@@ -24,7 +24,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/maugallery-nomini.js"></script>
     <script src="./assets/scripts.js"></script>
 
     <!-- SCHEMA ORG -->
@@ -48,7 +48,7 @@
         "vatID": "FR12345678901",
         "iso6523Code": "0199:724500PMK2A2M1SQQ228"
       }
-      </script>
+    </script>
 
     <!-- OPEN GRAPH -->
     <meta property="og:site_name" content="Nina Carducci" />
@@ -63,7 +63,7 @@
       content="Photographe professionnelle disponible sur Bordeaux pour portrait, entreprise, mariage, concert."
     />
     <meta property="og:image" content="./assets/images/nina.webp" />
-   
+
     <!-- TWITTER -->
     <meta name="twitter:card" content="./assets/images/nina.webp" />
     <meta
@@ -74,19 +74,13 @@
       name="twitter:description"
       content="Photographe professionnelle disponible sur Bordeaux pour portrait, entreprise, mariage, concert."
     />
-    <meta
-      name="twitter:image"
-      content="./assets/images/nina.webp"
-    />
-    <meta
-      name="twitter:url"
-      content="https://nina-carducci.github.io/"
-    />
+    <meta name="twitter:image" content="./assets/images/nina.webp" />
+    <meta name="twitter:url" content="https://nina-carducci.github.io/" />
   </head>
 
   <body>
     <header>
-      <p class="name"><a href="index.html">Nina Carducci</a></p>
+      <h1 class="name"><a href="index.html">Nina Carducci</a></h1>
       <nav>
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -174,7 +168,7 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon" inert></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button
@@ -183,7 +177,7 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon" inert></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -196,7 +190,7 @@
           <img src="./assets/images/nina.webp" alt="photo nina carducci" />
         </div>
         <div id="about-me">
-          <h1 class="about-me__title">À propos de moi</h1>
+          <h2 class="about-me__title">À propos de moi</h2>
           <p class="about-me__introduction">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestiné. Saisir un moment, une émotion, une situation, un
@@ -231,6 +225,7 @@
               ./assets/images/gallery/concerts/concert-red.webp     1000w
             "
             alt="photo concert scène"
+            tabindex="0"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -241,6 +236,7 @@
               ./assets/images/gallery/entreprise/homme-pro.webp     1000w
             "
             alt="photo entreprise homme"
+            tabindex="0"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -251,6 +247,7 @@
               ./assets/images/gallery/entreprise/ambiance-pro.webp     1000w
             "
             alt="photo entreprise femme"
+            tabindex="0"
           />
           <img
             data-gallery-tag="Mariages"
@@ -261,6 +258,7 @@
               ./assets/images/gallery/mariage/mains.webp     1000w
             "
             alt="photo mariages mains"
+            tabindex="0"
           />
           <img
             data-gallery-tag="Portrait"
@@ -271,6 +269,7 @@
               ./assets/images/gallery/portraits/yeux.webp     1000w
             "
             alt="photo portrait yeux fermés"
+            tabindex="0"
           />
           <img
             data-gallery-tag="Mariages"
@@ -281,6 +280,7 @@
               ./assets/images/gallery/mariage/mariage.webp     1000w
             "
             alt="photo mariages accolade"
+            tabindex="0"
           />
           <img
             data-gallery-tag="Portrait"
@@ -291,6 +291,7 @@
               ./assets/images/gallery/portraits/grillage.webp     1000w
             "
             alt="photo portrait femme grillage"
+            tabindex="0"
           />
           <img
             data-gallery-tag="Concert"
@@ -301,6 +302,7 @@
               ./assets/images/gallery/concerts/chanteur.webp     1000w
             "
             alt="photo concert artiste"
+            tabindex="0"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -311,6 +313,7 @@
               ./assets/images/gallery/entreprise/smile-pro.webp     1000w
             "
             alt="photo entreprise ambiance"
+            tabindex="0"
           />
         </div>
       </div>
